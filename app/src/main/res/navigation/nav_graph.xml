@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="cr.ac.una.lab4.HomeFragment"
+        android:label="@string/home_fragment_label"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_CameraFragment"
+            app:destination="@id/CameraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CameraFragment"
+        android:name="cr.ac.una.lab4.CameraFragment"
+        android:label="@string/camera_fragment_label"
+        tools:layout="@layout/fragment_camera">
+
+        <action
+            android:id="@+id/action_CameraFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+        <argument
+            android:name="movimiento"
+            app:argType="cr.ac.una.lab4.entities.Movimiento"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+</navigation>

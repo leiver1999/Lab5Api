@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lab4</string>
+    <string name="copyright">©Dispositivos Moviles</string>
+    <string name="menu_camera">Cámara</string>
+    <string name="menu_gallery">Galería</string>
+    <string name="menu_tools">Configuración</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">abrir</string>
+    <string name="navigation_drawer_close">cerrar</string>
+    <string name="home_fragment_label">Home Fragment\n</string>
+    <string name="camera_fragment_label">Camera Fragment\n</string>
+</resources>
